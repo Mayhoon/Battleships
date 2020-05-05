@@ -2,37 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc212853-fb91-4129-a251-d05fabcb9553" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/6.1/fileChanges/last-build.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/6.1/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/scenes/Battlefield.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/group/MainApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/group/MainApp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/group/controller/BaseSceneController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/group/controller/BaseSceneController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/group/model/MyClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/group/model/MyClass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/scenes/base_scene.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/scenes/base_scene.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/group/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/group/MainApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/scenes/Battlefield.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/scenes/Battlefield.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/scenes/base_scene.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/scenes/base_scene.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,11 +48,16 @@
     <property name="ignore_missing_gitignore" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
     <property name="show.unlinked.gradle.project.popup" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="Applet" factoryName="Applet">
@@ -152,8 +128,16 @@
       <option name="presentableId" value="Default" />
       <updated>1588657539917</updated>
       <workItem from="1588657578956" duration="1412000" />
-      <workItem from="1588659037930" duration="1601000" />
+      <workItem from="1588659037930" duration="2723000" />
     </task>
+    <task id="LOCAL-00001" summary="Setup base project">
+      <created>1588660652914</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1588660652914</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -161,40 +145,46 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Setup base project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Setup base project" />
   </component>
   <component name="WindowStateProjectService">
     <state x="997" y="501" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1588659553475">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="997" y="501" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1400/-1920.360.1920.1080@0.0.2560.1400" timestamp="1588659553475" />
-    <state x="897" y="276" key="CommitChangelistDialog2" timestamp="1588659574634">
+    <state x="1076" y="606" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1588661734364">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="897" y="276" key="CommitChangelistDialog2/0.0.2560.1400/-1920.360.1920.1080@0.0.2560.1400" timestamp="1588659574634" />
+    <state x="1076" y="606" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.2560.1400/-1920.360.1920.1080@0.0.2560.1400" timestamp="1588661734364" />
+    <state x="897" y="276" key="CommitChangelistDialog2" timestamp="1588660652065">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="897" y="276" key="CommitChangelistDialog2/0.0.2560.1400/-1920.360.1920.1080@0.0.2560.1400" timestamp="1588660652065" />
     <state x="1060" y="454" key="FileChooserDialogImpl" timestamp="1588657993372">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1060" y="454" key="FileChooserDialogImpl/0.0.2560.1400/-1920.360.1920.1080@0.0.2560.1400" timestamp="1588657993372" />
-    <state width="2516" height="396" key="GridCell.Tab.0.bottom" timestamp="1588660051616">
+    <state width="2516" height="396" key="GridCell.Tab.0.bottom" timestamp="1588660653070">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2516" height="396" key="GridCell.Tab.0.bottom/0.0.2560.1400/-1920.360.1920.1080@0.0.2560.1400" timestamp="1588660051616" />
-    <state width="2516" height="396" key="GridCell.Tab.0.center" timestamp="1588660051616">
+    <state width="2516" height="396" key="GridCell.Tab.0.bottom/0.0.2560.1400/-1920.360.1920.1080@0.0.2560.1400" timestamp="1588660653070" />
+    <state width="2516" height="396" key="GridCell.Tab.0.center" timestamp="1588660653070">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2516" height="396" key="GridCell.Tab.0.center/0.0.2560.1400/-1920.360.1920.1080@0.0.2560.1400" timestamp="1588660051616" />
-    <state width="2516" height="396" key="GridCell.Tab.0.left" timestamp="1588660051616">
+    <state width="2516" height="396" key="GridCell.Tab.0.center/0.0.2560.1400/-1920.360.1920.1080@0.0.2560.1400" timestamp="1588660653070" />
+    <state width="2516" height="396" key="GridCell.Tab.0.left" timestamp="1588660653070">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2516" height="396" key="GridCell.Tab.0.left/0.0.2560.1400/-1920.360.1920.1080@0.0.2560.1400" timestamp="1588660051616" />
-    <state width="2516" height="396" key="GridCell.Tab.0.right" timestamp="1588660051616">
+    <state width="2516" height="396" key="GridCell.Tab.0.left/0.0.2560.1400/-1920.360.1920.1080@0.0.2560.1400" timestamp="1588660653070" />
+    <state width="2516" height="396" key="GridCell.Tab.0.right" timestamp="1588660653070">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2516" height="396" key="GridCell.Tab.0.right/0.0.2560.1400/-1920.360.1920.1080@0.0.2560.1400" timestamp="1588660051616" />
-    <state x="781" y="331" key="SettingsEditor" timestamp="1588660495605">
+    <state width="2516" height="396" key="GridCell.Tab.0.right/0.0.2560.1400/-1920.360.1920.1080@0.0.2560.1400" timestamp="1588660653070" />
+    <state x="781" y="331" key="SettingsEditor" timestamp="1588661173565">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="781" y="331" key="SettingsEditor/0.0.2560.1400/-1920.360.1920.1080@0.0.2560.1400" timestamp="1588660495605" />
+    <state x="781" y="331" key="SettingsEditor/0.0.2560.1400/-1920.360.1920.1080@0.0.2560.1400" timestamp="1588661173565" />
     <state x="662" y="319" key="new project wizard" timestamp="1588658939483">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
