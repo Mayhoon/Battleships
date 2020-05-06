@@ -12,7 +12,7 @@ public class Starter {
         if (type.equals(Networking.CLIENT)) {
             kryoClient = new KryoClient();
             kryoClient.start("localhost");
-m
+
         } else if (type.equals(Networking.HOST)) {
             kryoServer = new KryoServer();
             kryoServer.start();
