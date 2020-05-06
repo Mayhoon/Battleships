@@ -1,6 +1,6 @@
 package battleships.console;
 
-import java.io.IOException;
+import java.util.ArrayList;
 
 public class Game {
     public static void main(String[] args) {
@@ -8,13 +8,14 @@ public class Game {
     }
 
     private Input input;
+    private Output output;
+    private ArrayList ships;
 
     public Game() {
-        try {
-            input = new Input();
-            input.serverOrHost();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        input = new Input();
+        ships = input.placeShips();
+
+        output = new Output(ships);
+        output.update();
     }
 }

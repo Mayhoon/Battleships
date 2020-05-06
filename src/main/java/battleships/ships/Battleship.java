@@ -1,19 +1,16 @@
 package battleships.ships;
 
+import java.io.File;
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
 public class Battleship extends Ship {
     // Constructor
-    public Battleship(List<Field> coordinates, boolean horizontal) {
+    public Battleship(Field field, boolean horizontal) throws Exception {
         length = 5;
         width = 1;
         isHorizontal = horizontal;
-        occupiedCoordinates = coordinates;
-        hitCoordinates = Collections.emptyList();
-    }
-
-    public Battleship() {
-        length = 5;
+        setCoordinates(horizontal, field);
     }
 }

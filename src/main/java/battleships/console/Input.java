@@ -3,7 +3,6 @@ package battleships.console;
 import battleships.server.KryoClient;
 import battleships.server.KryoServer;
 import battleships.ships.Battleship;
-import battleships.ships.Cruiser;
 import battleships.ships.Field;
 import battleships.ships.Ship;
 
@@ -21,11 +20,9 @@ public class Input {
         scanner = new Scanner(System.in);
     }
 
-    public void placeShips() {
+    public ArrayList placeShips() {
         Boolean horizontal = false;
         ArrayList list = new ArrayList<Ship>();
-
-        Battleship battleship = new Battleship();
 
         //Direction of the ship
         System.out.println("Direction of your Battleship:");
@@ -38,13 +35,17 @@ public class Input {
         }
 
         //Position of the ship
-        for (int i = 0; i < battleship.getLength(); i++) {
-            System.out.println("Battleship");
+        System.out.println("Battleship position x");
+        int x = scanner.nextInt();
+        System.out.println("Battleship position y at length ");
+        int y = scanner.nextInt();
 
-//            Field field = new Field(0, 0);
-//            list.add(new Cruiser(field, horizontal));
+        try {
+            list.add(new Battleship(new Field(x, y), horizontal));
+        } catch (Exception e) {
+            e.printStackTrace();
         }
-
+        return list;
     }
 
     public void serverOrHost() throws IOException {

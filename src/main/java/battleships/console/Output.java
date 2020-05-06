@@ -1,17 +1,15 @@
 package battleships.console;
 
-import battleships.ships.Ship;
+import battleships.ships.Battleship;
 
-import java.awt.*;
 import java.util.ArrayList;
-import java.util.List;
 
 public class Output {
     private int Battlefield_width;
     private int Battlefield_height;
     private ArrayList ships;
 
-    public Output() {
+    public Output(ArrayList<Battleship> ships) {
         this.ships = ships;
         Battlefield_height = 10;
         Battlefield_width = 10;
@@ -24,6 +22,10 @@ public class Output {
         for (int y = 0; y < Battlefield_height; y++) {
             System.out.print(Color.CYAN + y + "  " + Color.RESET);
             for (int x = 0; x < Battlefield_width; x++) {
+
+//                for (int i = 0; i < ships.size(); i++) {
+//                    System.out.print("["+ ships.get(i). +" ] ");
+//                }
                 System.out.print("[ ] ");
             }
             System.out.println("");

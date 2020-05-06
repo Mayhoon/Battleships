@@ -1,6 +1,7 @@
 package battleships.ships;
 
 import battleships.enums.HitType;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -75,7 +76,7 @@ public class Ship {
     // Methods
     // Determine Hit
     public HitType isHit(Field position) {
-        for (Field f: occupiedCoordinates) {
+        for (Field f : occupiedCoordinates) {
             if (f == position) {
                 if (!hitCoordinates.contains(f)) {
                     hitCoordinates.add(f);
