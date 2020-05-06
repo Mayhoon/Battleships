@@ -15,7 +15,7 @@ public class OilPlatform extends Ship {
     // Methods
     @Override
     public void setCoordinates(boolean isHorizontal, Field position) throws Exception {
-        for (int l = 1; l < this.length; l++) {
+        for (int l = 0; l < this.length; l++) {
             if ((position.getX() + length) > 9 || (position.getY() + length) > 9) {
                 throw new Exception(OUT_OF_BOUND_EXCEPTION_CAUSE);
             } else {
