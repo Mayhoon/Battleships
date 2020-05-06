@@ -2,8 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc212853-fb91-4129-a251-d05fabcb9553" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/battleships/ships/Battleship.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/battleships/ships/Cruiser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/battleships/ships/Minesweeper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/battleships/ships/OilPlatform.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/group/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/group/MainApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/battleships/enums/HitType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/battleships/enums/HitType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/battleships/enums/ShipType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/battleships/ships/Carrier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/battleships/ships/Carrier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/battleships/ships/Field.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/battleships/ships/Field.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/battleships/ships/Ship.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/battleships/ships/Ship.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/battleships/ships/ShipVersuch.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +35,13 @@
         </projects_view>
       </state>
     </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -57,6 +73,10 @@
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Dominik\Desktop\Battleships\src\main\java\battleships\ships" />
+      <recent name="C:\Users\Dominik\Desktop\Battleships\src\main\java\battleships\enums" />
     </key>
   </component>
   <component name="RunManager">
@@ -128,7 +148,9 @@
       <option name="presentableId" value="Default" />
       <updated>1588657539917</updated>
       <workItem from="1588657578956" duration="1412000" />
-      <workItem from="1588659037930" duration="2723000" />
+      <workItem from="1588659037930" duration="6592000" />
+      <workItem from="1588743801803" duration="103000" />
+      <workItem from="1588743954099" duration="1289000" />
     </task>
     <task id="LOCAL-00001" summary="Setup base project">
       <created>1588660652914</created>
@@ -137,7 +159,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588660652914</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Setup base project #2">
+      <created>1588661991742</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1588661991742</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,41 +175,46 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Setup base project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Setup base project" />
+    <MESSAGE value="Setup base project #2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Setup base project #2" />
   </component>
   <component name="WindowStateProjectService">
     <state x="997" y="501" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1588659553475">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="997" y="501" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1400/-1920.360.1920.1080@0.0.2560.1400" timestamp="1588659553475" />
+    <state x="1085" y="405" key="#com.intellij.ide.util.MemberChooser" timestamp="1588662483231">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1085" y="405" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400/-1920.360.1920.1080@0.0.2560.1400" timestamp="1588662483231" />
     <state x="1076" y="606" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1588661734364">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1076" y="606" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.2560.1400/-1920.360.1920.1080@0.0.2560.1400" timestamp="1588661734364" />
-    <state x="897" y="276" key="CommitChangelistDialog2" timestamp="1588660652065">
+    <state x="897" y="276" key="CommitChangelistDialog2" timestamp="1588661991113">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="897" y="276" key="CommitChangelistDialog2/0.0.2560.1400/-1920.360.1920.1080@0.0.2560.1400" timestamp="1588660652065" />
+    <state x="897" y="276" key="CommitChangelistDialog2/0.0.2560.1400/-1920.360.1920.1080@0.0.2560.1400" timestamp="1588661991113" />
     <state x="1060" y="454" key="FileChooserDialogImpl" timestamp="1588657993372">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1060" y="454" key="FileChooserDialogImpl/0.0.2560.1400/-1920.360.1920.1080@0.0.2560.1400" timestamp="1588657993372" />
-    <state width="2516" height="396" key="GridCell.Tab.0.bottom" timestamp="1588660653070">
+    <state width="2516" height="396" key="GridCell.Tab.0.bottom" timestamp="1588666775708">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2516" height="396" key="GridCell.Tab.0.bottom/0.0.2560.1400/-1920.360.1920.1080@0.0.2560.1400" timestamp="1588660653070" />
-    <state width="2516" height="396" key="GridCell.Tab.0.center" timestamp="1588660653070">
+    <state width="2516" height="396" key="GridCell.Tab.0.bottom/0.0.2560.1400/-1920.360.1920.1080@0.0.2560.1400" timestamp="1588666775708" />
+    <state width="2516" height="396" key="GridCell.Tab.0.center" timestamp="1588666775707">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2516" height="396" key="GridCell.Tab.0.center/0.0.2560.1400/-1920.360.1920.1080@0.0.2560.1400" timestamp="1588660653070" />
-    <state width="2516" height="396" key="GridCell.Tab.0.left" timestamp="1588660653070">
+    <state width="2516" height="396" key="GridCell.Tab.0.center/0.0.2560.1400/-1920.360.1920.1080@0.0.2560.1400" timestamp="1588666775707" />
+    <state width="2516" height="396" key="GridCell.Tab.0.left" timestamp="1588666775707">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2516" height="396" key="GridCell.Tab.0.left/0.0.2560.1400/-1920.360.1920.1080@0.0.2560.1400" timestamp="1588660653070" />
-    <state width="2516" height="396" key="GridCell.Tab.0.right" timestamp="1588660653070">
+    <state width="2516" height="396" key="GridCell.Tab.0.left/0.0.2560.1400/-1920.360.1920.1080@0.0.2560.1400" timestamp="1588666775707" />
+    <state width="2516" height="396" key="GridCell.Tab.0.right" timestamp="1588666775707">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2516" height="396" key="GridCell.Tab.0.right/0.0.2560.1400/-1920.360.1920.1080@0.0.2560.1400" timestamp="1588660653070" />
+    <state width="2516" height="396" key="GridCell.Tab.0.right/0.0.2560.1400/-1920.360.1920.1080@0.0.2560.1400" timestamp="1588666775707" />
     <state x="781" y="331" key="SettingsEditor" timestamp="1588661173565">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
