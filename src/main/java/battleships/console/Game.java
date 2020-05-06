@@ -12,7 +12,7 @@ public class Game {
     public Game() {
         try {
             input = new Input();
-            input.askForServer();
+            input.serverOrHost();
         } catch (IOException e) {
             e.printStackTrace();
         }

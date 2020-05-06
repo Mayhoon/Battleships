@@ -1,30 +1,45 @@
 package battleships.console;
 
-import battleships.enums.Networking;
-import battleships.server.Starter;
+import battleships.server.KryoClient;
+import battleships.server.KryoServer;
 
 import java.io.IOException;
 import java.util.Scanner;
 
 public class Input {
-    private Starter starter;
 
-    public void askForServer() throws IOException {
-        System.out.println("Do you want to host or join?");
+    private KryoClient kryoClient;
+    private KryoServer kryoServer;
+    private Scanner scanner;
+
+    public void serverOrHost() throws IOException {
+        System.out.println("Do you want to host or join the game?");
         System.out.println("host / join");
-        Scanner scanner = new Scanner(System.in);
-        String inp = scanner.next();
 
-        switch (inp) {
+        scanner = new Scanner(System.in);
+        String input = scanner.next();
+
+        switch (input) {
             case "host":
-                starter = new Starter(Networking.HOST);
+                startServer();
                 break;
             case "join":
-                starter = new Starter(Networking.CLIENT);
+                startClient();
                 break;
             default:
-                System.out.println("Invalid input.");
-                System.exit(1);
+                System.out.println(Color.RED + "Invalid input." + Color.RESET);
+                serverOrHost();
         }
     }
+
+    private void startClient() throws IOException {
+        kryoClient = new KryoClient();
+        kryoClient.start("localhost");
+    }
+
+    private void startServer() throws IOException {
+        kryoServer = new KryoServer();
+        kryoServer.start();
+    }
+
 }
