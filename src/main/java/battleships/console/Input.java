@@ -2,10 +2,9 @@ package battleships.console;
 
 import battleships.server.KryoClient;
 import battleships.server.KryoServer;
-import battleships.ships.Battleship;
+import battleships.ships.Carrier;
 import battleships.ships.Field;
 import battleships.ships.Ship;
-import com.sun.prism.shader.Solid_TextureYV12_AlphaTest_Loader;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -22,9 +21,10 @@ public class Input {
 
     public ArrayList placeShips() {
         ArrayList list = new ArrayList<Ship>();
-
         try {
-            list.add(new Battleship(getPosition(), isHorizontal()));
+            // list.add(new Battleship(getPosition(), isHorizontal()));
+            list.add(new Carrier(getPosition(), isHorizontal()));
+
         } catch (Exception e) {
             e.printStackTrace();
         }

@@ -93,16 +93,16 @@ public class Ship {
     // Set Coordinates
     public void setCoordinates(boolean isHorizontal, Field position) throws Exception {
         if (isHorizontal) {
-            for (int l = 0; l < this.length; l++) {
-                if ((position.getX() + length) > 10 || (position.getY() + length) > 10) {
+            for (int l = 0; l < length; l++) {
+                if ((position.getX() + length - 1) > 9 || (position.getY()) > 9) {
                     throw new Exception(OUT_OF_BOUND_EXCEPTION_CAUSE);
                 } else {
                     this.occupiedCoordinates.add(new Field(position.getX() + l, position.getY()));
                 }
             }
         } else {
-            for (int l = 0; l < this.length; l++) {
-                if ((position.getX() - this.length) < 0 || (position.getY() - this.length) < 0) {
+            for (int l = 0; l < length; l++) {
+                if ((position.getX()) < 0 || (position.getY() - (length - 1)) < 0) {
                     throw new Exception(OUT_OF_BOUND_EXCEPTION_CAUSE);
                 } else {
                     this.occupiedCoordinates.add(new Field(position.getX(), position.getY() - l));
