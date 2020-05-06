@@ -47,12 +47,6 @@ public class Input {
 
     }
 
-    private()
-
-    {
-
-    }
-
     public void serverOrHost() throws IOException {
         System.out.println("Do you want to host or join the game?");
         System.out.println("host / join");
