@@ -1,10 +1,13 @@
 package battleships.console;
 
+import battleships.ships.Ship;
+
 public class Output {
     private int Battlefield_width;
     private int Battlefield_height;
+    private Ship[] list;
 
-    public Output() {
+    public Output(Ship[] list) {
         Battlefield_height = 10;
         Battlefield_width = 10;
     }
