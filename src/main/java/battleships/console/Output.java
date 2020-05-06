@@ -2,12 +2,17 @@ package battleships.console;
 
 import battleships.ships.Ship;
 
+import java.awt.*;
+import java.util.ArrayList;
+import java.util.List;
+
 public class Output {
     private int Battlefield_width;
     private int Battlefield_height;
-    private Ship[] list;
+    private ArrayList ships;
 
-    public Output(Ship[] list) {
+    public Output() {
+        this.ships = ships;
         Battlefield_height = 10;
         Battlefield_width = 10;
     }

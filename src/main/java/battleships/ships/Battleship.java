@@ -12,4 +12,8 @@ public class Battleship extends Ship {
         occupiedCoordinates = coordinates;
         hitCoordinates = Collections.emptyList();
     }
+
+    public Battleship() {
+        length = 5;
+    }
 }
