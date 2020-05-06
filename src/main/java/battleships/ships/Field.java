@@ -34,4 +34,10 @@ public class Field {
         this.x = x;
         this.y = y;
     }
+
+    public boolean canBeShot() {
+        if (isHit != HitType.NOT_SHOT) {
+            return true;
+        } else return false;
+    }
 }

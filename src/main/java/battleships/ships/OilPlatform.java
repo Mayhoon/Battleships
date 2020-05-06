@@ -5,12 +5,11 @@ import java.util.List;
 
 public class OilPlatform extends Ship {
     // Constructor
-    public OilPlatform(List<Field> coordinates, boolean horizontal) {
+    public OilPlatform(Field field, boolean horizontal) throws Exception {
         length = 2;
         width = 2;
         isHorizontal = horizontal;
-        occupiedCoordinates = coordinates;
-        hitCoordinates = Collections.emptyList();
+        this.setCoordinates(isHorizontal, field);
     }
 
     // Methods

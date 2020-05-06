@@ -5,11 +5,10 @@ import java.util.List;
 
 public class Minesweeper extends Ship {
     // Constructor
-    public Minesweeper(List<Field> coordinates, boolean horizontal) {
+    public Minesweeper(Field field, boolean horizontal) throws Exception {
         length = 3;
         width = 1;
         isHorizontal = horizontal;
-        occupiedCoordinates = coordinates;
-        hitCoordinates = Collections.emptyList();
+        setCoordinates(horizontal, field);
     }
 }

@@ -5,11 +5,10 @@ import java.util.List;
 
 public class Carrier extends Ship {
     // Constructor
-    public Carrier(List<Field> coordinates, boolean horizontal) {
+    public Carrier(Field field, boolean horizontal) throws Exception {
         length = 6;
         width = 1;
         isHorizontal = horizontal;
-        occupiedCoordinates = coordinates;
-        hitCoordinates = Collections.emptyList();
+        setCoordinates(horizontal, field);
     }
 }

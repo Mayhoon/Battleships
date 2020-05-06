@@ -80,6 +80,7 @@ public class Ship {
             if (f == position) {
                 if (!hitCoordinates.contains(f)) {
                     hitCoordinates.add(f);
+                    this.isDestroyed();
                     return HitType.SUCCESS;
                 } else {
                     return HitType.ALREADY_HIT;
@@ -113,5 +114,17 @@ public class Ship {
     // Rotate
     public boolean rotate(boolean isHorizontal) {
         return !isHorizontal;
+    }
+
+    // Ship Score Determination
+    public int grantScore() {
+        if (this.hitCoordinates.containsAll(this.occupiedCoordinates)) {
+            return this.score;
+        } else return 0;
+    }
+
+    // Ship Destroyed Determination
+    public boolean isDestroyed() {
+        return this.hitCoordinates.containsAll(this.occupiedCoordinates);
     }
 }
