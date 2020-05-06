@@ -102,7 +102,7 @@ public class Ship {
             }
         } else {
             for (int l = 0; l < this.length; l++) {
-                if ((position.getX() + this.length) < 0 || (position.getY() + this.length) < 0) {
+                if ((position.getX() - this.length) < 0 || (position.getY() - this.length) < 0) {
                     throw new Exception(OUT_OF_BOUND_EXCEPTION_CAUSE);
                 } else {
                     this.occupiedCoordinates.add(new Field(position.getX(), position.getY() - l));
