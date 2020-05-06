@@ -23,19 +23,27 @@ public class Output {
             System.out.print(Color.CYAN + y + "  " + Color.RESET);
             for (int x = 0; x < Battlefield_width; x++) {
 
+                boolean occupied = false;
+
                 for (int i = 0; i < ships.size(); i++) {
                     for (int c = 0; c < ships.get(i).getOccupiedCoordinates().size(); c++) {
-                        System.out.println("X " + ships.get(i).getOccupiedCoordinates().get(c).getX());
-                        System.out.println("Y " + ships.get(i).getOccupiedCoordinates().get(c).getY());
-                    }
-                    System.out.println("-----------------------------");
+//                        System.out.println("X " + ships.get(i).getOccupiedCoordinates().get(c).getX());
+//                        System.out.println("Y " + ships.get(i).getOccupiedCoordinates().get(c).getY());
 
-//                    if (ships.get(i).getOccupiedCoordinates().get(i).getX() == x
-//                            && ships.get(i).getOccupiedCoordinates().get(i).getY() == y) {
-//                        System.out.print("[X] ");
-//                    } else {
-//                        System.out.print("[ ] ");
-//                    }
+                        int posY = ships.get(i).getOccupiedCoordinates().get(c).getY();
+                        int posX = ships.get(i).getOccupiedCoordinates().get(c).getX();
+
+                        if (posX == x && posY == y) {
+                            occupied = true;
+                        }
+                    }
+//                    System.out.println("-----------------------------");
+                }
+
+                if (occupied == true) {
+                    System.out.print("[X] ");
+                } else if (occupied == false) {
+                    System.out.print("[ ] ");
                 }
             }
             System.out.println("");
