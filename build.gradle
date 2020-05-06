@@ -11,9 +11,24 @@ version '1.0-SNAPSHOT'
 
 repositories {
     mavenCentral()
+    maven { url 'https://jitpack.io' }
 }
 
 javafx {
     version = '14'
     modules = ['javafx.controls', 'javafx.fxml']
 }
+
+dependencies {
+    implementation 'com.github.crykn:kryonet:2.22.6'
+}
+
+jar {
+    manifest {
+        attributes(
+                'Class-Path': configurations.compile.collect { it.getName() }.join(' '),
+                'Main-Class': 'battleships.console.Game.Class'
+        )
+    }
+}
+
