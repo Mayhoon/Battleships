@@ -11,7 +11,6 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Input {
-
     private KryoClient kryoClient;
     private KryoServer kryoServer;
     private Scanner scanner;
@@ -21,31 +20,40 @@ public class Input {
     }
 
     public ArrayList placeShips() {
-        Boolean horizontal = false;
         ArrayList list = new ArrayList<Ship>();
+        Field field = getPosition();
+        boolean horizontal = isHorizontal();
 
-        //Direction of the ship
-        System.out.println("Direction of your Battleship:");
+        try {
+            list.add(new Battleship(field, horizontal));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return list;
+    }
+
+    private Boolean isHorizontal() {
+        System.out.println("Direction of the ship:");
         System.out.println("horizontal (h) / diagonal (d)");
+
+        Boolean horizontal = false;
         String input = scanner.next();
+
         if (input.equals("h")) {
             horizontal = true;
         } else if (input.equals("d")) {
             horizontal = false;
         }
+        return horizontal;
+    }
 
-        //Position of the ship
-        System.out.println("Battleship position x");
+    private Field getPosition() {
+        System.out.println("X position of the ship:");
         int x = scanner.nextInt();
-        System.out.println("Battleship position y at length ");
+        System.out.println("Y position of the ship:");
         int y = scanner.nextInt();
 
-        try {
-            list.add(new Battleship(new Field(x, y), horizontal));
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return list;
+        return new Field(x, y);
     }
 
     public void serverOrHost() throws IOException {

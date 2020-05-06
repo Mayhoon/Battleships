@@ -1,5 +1,7 @@
 package battleships.console;
 
+import battleships.ships.Ship;
+
 import java.util.ArrayList;
 
 public class Game {
@@ -9,7 +11,7 @@ public class Game {
 
     private Input input;
     private Output output;
-    private ArrayList ships;
+    private ArrayList<Ship> ships;
 
     public Game() {
         input = new Input();

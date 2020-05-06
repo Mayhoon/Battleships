@@ -1,15 +1,15 @@
 package battleships.console;
 
-import battleships.ships.Battleship;
+import battleships.ships.Ship;
 
 import java.util.ArrayList;
 
 public class Output {
     private int Battlefield_width;
     private int Battlefield_height;
-    private ArrayList ships;
+    private ArrayList<Ship> ships;
 
-    public Output(ArrayList<Battleship> ships) {
+    public Output(ArrayList<Ship> ships) {
         this.ships = ships;
         Battlefield_height = 10;
         Battlefield_width = 10;
@@ -23,10 +23,20 @@ public class Output {
             System.out.print(Color.CYAN + y + "  " + Color.RESET);
             for (int x = 0; x < Battlefield_width; x++) {
 
-//                for (int i = 0; i < ships.size(); i++) {
-//                    System.out.print("["+ ships.get(i). +" ] ");
-//                }
-                System.out.print("[ ] ");
+                for (int i = 0; i < ships.size(); i++) {
+                    for (int c = 0; c < ships.get(i).getOccupiedCoordinates().size(); c++) {
+                        System.out.println("X " + ships.get(i).getOccupiedCoordinates().get(c).getX());
+                        System.out.println("Y " + ships.get(i).getOccupiedCoordinates().get(c).getY());
+                    }
+                    System.out.println("-----------------------------");
+
+//                    if (ships.get(i).getOccupiedCoordinates().get(i).getX() == x
+//                            && ships.get(i).getOccupiedCoordinates().get(i).getY() == y) {
+//                        System.out.print("[X] ");
+//                    } else {
+//                        System.out.print("[ ] ");
+//                    }
+                }
             }
             System.out.println("");
         }
