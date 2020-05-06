@@ -36,8 +36,6 @@ public class Field {
     }
 
     public boolean canBeShot() {
-        if (isHit != HitType.NOT_SHOT) {
-            return true;
-        } else return false;
+        return isHit != HitType.NOT_SHOT;
     }
 }
