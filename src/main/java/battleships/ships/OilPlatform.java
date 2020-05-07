@@ -6,6 +6,7 @@ import java.util.List;
 public class OilPlatform extends Ship {
     // Constructor
     public OilPlatform(Field field, boolean horizontal) throws Exception {
+        description = "Oil Platform";
         length = 2;
         width = 2;
         isHorizontal = horizontal;
