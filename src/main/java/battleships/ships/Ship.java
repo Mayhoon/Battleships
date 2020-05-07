@@ -7,6 +7,8 @@ import java.util.List;
 
 public class Ship {
     final String OUT_OF_BOUND_EXCEPTION_CAUSE = "The Ship cannot be placed out of bounds";
+    final String FIELD_ALREADY_IN_USE_EXCEPTION_CAUSE
+            = "The coordinates of your new Ship are already used by another one";
 
     // Ships length
     int length;
@@ -107,6 +109,21 @@ public class Ship {
                 } else {
                     this.occupiedCoordinates.add(new Field(position.getX(), position.getY() - l));
                 }
+            }
+        }
+    }
+
+    // Placement Validation - Checks if other ships already use the coordinates
+    public void validatePlacementLocation(List<Ship> fleet) throws Exception {
+        List<Field> allShipsCoordinates = new ArrayList<>();
+
+        for (Ship ship : fleet) {
+            allShipsCoordinates.addAll(ship.occupiedCoordinates);
+        }
+
+        for (Field coordinate : occupiedCoordinates) {
+            if (allShipsCoordinates.contains(coordinate)) {
+                throw new Exception(FIELD_ALREADY_IN_USE_EXCEPTION_CAUSE);
             }
         }
     }

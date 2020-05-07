@@ -4,6 +4,7 @@ import battleships.server.KryoClient;
 import battleships.server.KryoServer;
 import battleships.ships.Carrier;
 import battleships.ships.Field;
+import battleships.ships.OilPlatform;
 import battleships.ships.Ship;
 
 import java.io.IOException;
@@ -11,6 +12,8 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Input {
+    final String INVALID_PLACEMENT_RANGE_EXCEPTION_CAUSE = "Your Ship must be placed within the Battlefield!";
+
     private KryoClient kryoClient;
     private KryoServer kryoServer;
     private Scanner scanner;
@@ -23,7 +26,7 @@ public class Input {
         ArrayList list = new ArrayList<Ship>();
         try {
             // list.add(new Battleship(getPosition(), isHorizontal()));
-            list.add(new Carrier(getPosition(), isHorizontal()));
+            list.add(new OilPlatform(getPosition(), isHorizontal()));
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -46,13 +49,13 @@ public class Input {
         return horizontal;
     }
 
-    private Field getPosition() {
+    private Field getPosition() throws Exception {
         System.out.println("X position of the ship:");
         int x = scanner.nextInt();
         System.out.println("Y position of the ship:");
         int y = scanner.nextInt();
 
-        return new Field(x, y);
+        return validateInput(new Field(x, y));
     }
 
     public void serverOrHost() throws IOException {
@@ -81,6 +84,14 @@ public class Input {
     private void startServer() throws IOException {
         kryoServer = new KryoServer();
         kryoServer.start();
+    }
+
+    private Field validateInput(Field field) throws Exception {
+        if (field.getX() > 9 || field.getX() < 0 || field.getY() > 9 || field.getY() < 0) {
+            throw new Exception(INVALID_PLACEMENT_RANGE_EXCEPTION_CAUSE);
+        } else {
+            return field;
+        }
     }
 
 }
