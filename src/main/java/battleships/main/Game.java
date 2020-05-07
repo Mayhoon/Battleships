@@ -27,15 +27,15 @@ public class Game {
 
         ships = new ArrayList<>();
         System.out.println(SHIP_TO_BE_PLACED + CARRIER_DESCRIPTION);
-        ships.add(new Carrier(input.getPosition(), input.getDirection()));
+        ships.add(new Carrier(input.getPosition(), input.getDirection()).validatePlacementLocation(ships));
         System.out.println(SHIP_TO_BE_PLACED + BATTLESHIP_DESCRIPTION);
-        ships.add(new Battleship(input.getPosition(), input.getDirection()));
+        ships.add(new Battleship(input.getPosition(), input.getDirection()).validatePlacementLocation(ships));
         System.out.println(SHIP_TO_BE_PLACED + CRUISER_DESCRIPTION);
-        ships.add(new Cruiser(input.getPosition(), input.getDirection()));
+        ships.add(new Cruiser(input.getPosition(), input.getDirection()).validatePlacementLocation(ships));
         System.out.println(SHIP_TO_BE_PLACED + MINESWEEPER_DESCRIPTION);
-        ships.add(new Minesweeper(input.getPosition(), input.getDirection()));
+        ships.add(new Minesweeper(input.getPosition(), input.getDirection()).validatePlacementLocation(ships));
         System.out.println(SHIP_TO_BE_PLACED + OIL_PLATFORM_DESCRIPTION);
-        ships.add(new OilPlatform(input.getPosition(), input.getDirection()));
+        ships.add(new OilPlatform(input.getPosition(), input.getDirection()).validatePlacementLocation(ships));
 
         output = new Output(ships);
         output.update();

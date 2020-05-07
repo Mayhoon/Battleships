@@ -117,7 +117,7 @@ public class Ship {
     }
 
     // Placement Validation - Checks if other ships already use the coordinates
-    public void validatePlacementLocation(List<Ship> fleet) throws Exception {
+    public Ship validatePlacementLocation(List<Ship> fleet) throws Exception {
         List<Field> allShipsCoordinates = new ArrayList<>();
 
         for (Ship ship : fleet) {
@@ -129,6 +129,8 @@ public class Ship {
                 throw new Exception(FIELD_ALREADY_IN_USE_EXCEPTION_CAUSE);
             }
         }
+
+        return this;
     }
 
     // Rotate
