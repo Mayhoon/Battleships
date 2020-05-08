@@ -1,10 +1,11 @@
 plugins {
     id 'java'
     id 'application'
-    id 'org.openjfx.javafxplugin' version '0.0.8'
+//    id 'org.openjfx.javafxplugin' version '0.0.8'
+    id 'com.github.johnrengelman.shadow' version '5.2.0'
 }
 
-mainClassName = 'group.MainApp'
+mainClassName = 'battleships.main.Game'
 
 group 'group'
 version '1.0-SNAPSHOT'
@@ -13,17 +14,13 @@ repositories {
     mavenCentral()
     maven { url 'https://jitpack.io' }
 }
-
-javafx {
-    version = '14'
-    modules = ['javafx.controls', 'javafx.fxml']
-}
+//
+//javafx {
+//    version = '14'
+//    modules = ['javafx.controls', 'javafx.fxml']
+//}
 
 dependencies {
-    implementation 'com.github.crykn:kryonet:2.22.6'
-}
-
-configurations {
     implementation 'com.github.crykn:kryonet:2.22.6'
 }
 
@@ -34,5 +31,11 @@ jar {
                 'Main-Class': 'battleships.main.Game'
         )
     }
+}
+
+shadowJar {
+    baseName = 'shadow'
+    classifier = ''
+    archiveVersion = ''
 }
 

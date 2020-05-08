@@ -16,7 +16,7 @@ public class KryoServer {
 
         //Register classes
         Kryo kryo = server.getKryo();
-        kryo.register(class);
+        kryo.register(Data.class);
     }
 
     public void start() throws IOException {
