@@ -29,9 +29,6 @@ if "%DIRNAME%" == "" set DIRNAME=.
 set APP_BASE_NAME=%~n0
 set APP_HOME=%DIRNAME%..
 
-@rem Resolve any "." and ".." in APP_HOME to make it shorter.
-for %%i in ("%APP_HOME%") do set APP_HOME=%%~fi
-
 @rem Add default JVM options here. You can also use JAVA_OPTS and JAVA_FX_OPTS to pass JVM options to this script.
 set DEFAULT_JVM_OPTS=
 
@@ -82,7 +79,7 @@ set CMD_LINE_ARGS=%*
 :execute
 @rem Setup the command line
 
-set CLASSPATH=%APP_HOME%\lib\JavaFX-1.0-SNAPSHOT.jar;%APP_HOME%\lib\javafx-fxml-14-linux.jar;%APP_HOME%\lib\javafx-controls-14-linux.jar;%APP_HOME%\lib\javafx-controls-14.jar;%APP_HOME%\lib\javafx-graphics-14-linux.jar;%APP_HOME%\lib\javafx-graphics-14.jar;%APP_HOME%\lib\javafx-base-14-linux.jar;%APP_HOME%\lib\javafx-base-14.jar
+set CLASSPATH=%APP_HOME%\lib\JavaFX-1.0-SNAPSHOT.jar;%APP_HOME%\lib\javafx-fxml-14-win.jar;%APP_HOME%\lib\javafx-controls-14-win.jar;%APP_HOME%\lib\javafx-controls-14.jar;%APP_HOME%\lib\javafx-graphics-14-win.jar;%APP_HOME%\lib\javafx-graphics-14.jar;%APP_HOME%\lib\javafx-base-14-win.jar;%APP_HOME%\lib\javafx-base-14.jar;%APP_HOME%\lib\kryonet-2.22.6.jar;%APP_HOME%\lib\jsonbeans-0.9.jar;%APP_HOME%\lib\kryo-5.0.0-RC4.jar;%APP_HOME%\lib\reflectasm-1.11.9.jar;%APP_HOME%\lib\objenesis-3.0.1.jar;%APP_HOME%\lib\minlog-1.3.1.jar
 
 @rem Execute JavaFX
 "%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %JAVA_FX_OPTS%  -classpath "%CLASSPATH%" group.MainApp %CMD_LINE_ARGS%

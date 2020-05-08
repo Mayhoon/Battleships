@@ -3,20 +3,192 @@
   <component name="ChangeListManager">
     <list default="true" id="cc212853-fb91-4129-a251-d05fabcb9553" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/distributions/JavaFX-1.0-SNAPSHOT.tar" beforeDir="false" afterPath="$PROJECT_DIR$/build/distributions/JavaFX-1.0-SNAPSHOT.tar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/distributions/JavaFX-1.0-SNAPSHOT.zip" beforeDir="false" afterPath="$PROJECT_DIR$/build/distributions/JavaFX-1.0-SNAPSHOT.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/JavaFX-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/scripts/JavaFX" beforeDir="false" afterPath="$PROJECT_DIR$/build/scripts/JavaFX" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/scripts/JavaFX.bat" beforeDir="false" afterPath="$PROJECT_DIR$/build/scripts/JavaFX.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/jar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/jar/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/battleships/console/Input.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/battleships/console/Input.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/battleships/enums/NetworkType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/battleships/enums/NetworkType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/battleships/main/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/battleships/main/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/battleships/server/KryoClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/battleships/server/KryoClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/battleships/server/KryoServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/battleships/server/KryoServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/battleships/server/Network.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/battleships/server/Network.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="JavaFX" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="JavaFX" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="JavaFX" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="JavaFX" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="other" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Enum" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1baXXnvSUl6YblDGb60ehLxdCRa" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RunManager" selected="Gradle.Battleships [jar]">
+    <configuration name="Game" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="battleships.main.Game" />
+      <module name="JavaFX.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="battleships.main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Network" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="battleships.server.Network" />
+      <module name="JavaFX.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="battleships.server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Battleships [buildDependents]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="buildDependents" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="Battleships [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="Battleships [jar]" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="jar" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.Battleships [buildDependents]" />
+        <item itemvalue="Gradle.Battleships [build]" />
+        <item itemvalue="Application.Network" />
+        <item itemvalue="Application.Game" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -34,13 +206,60 @@
     <configuration />
   </component>
   <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cc212853-fb91-4129-a251-d05fabcb9553" name="Default Changelist" comment="" />
+      <created>1588871219348</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1588871219348</updated>
+    </task>
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state x="765" y="233" key="#com.intellij.ide.util.MemberChooser" timestamp="1588957435695">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="765" y="233" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1588957435695" />
     <state x="690" y="307" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1588746091270">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="690" y="307" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1588746091270" />
+    <state x="740" y="279" key="FileChooserDialogImpl" timestamp="1588871856517">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="740" y="279" key="FileChooserDialogImpl/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1588871856517" />
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1588960783639">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1588960783639" />
+    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1588960783639">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1588960783639" />
+    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1588960783639">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1588960783639" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1588960783639">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1588960783639" />
+    <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1588956650543">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="352" key="GridCell.Tab.1.bottom/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1588956650543" />
+    <state width="1877" height="352" key="GridCell.Tab.1.center" timestamp="1588956650542">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="352" key="GridCell.Tab.1.center/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1588956650542" />
+    <state width="1877" height="352" key="GridCell.Tab.1.left" timestamp="1588956650542">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="352" key="GridCell.Tab.1.left/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1588956650542" />
+    <state width="1877" height="352" key="GridCell.Tab.1.right" timestamp="1588956650542">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="352" key="GridCell.Tab.1.right/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1588956650542" />
     <state x="440" y="98" key="SettingsEditor" timestamp="1588746121341">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -49,5 +268,13 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="769" y="441" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1588746342163" />
+    <state x="656" y="262" width="737" height="596" key="find.popup" timestamp="1588960570486">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="656" y="262" width="737" height="596" key="find.popup/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1588960570486" />
+    <state x="616" y="178" width="672" height="676" key="search.everywhere.popup" timestamp="1588961091810">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="616" y="178" width="672" height="676" key="search.everywhere.popup/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1588961091810" />
   </component>
 </project>

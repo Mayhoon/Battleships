@@ -16,17 +16,24 @@ public class KryoServer {
 
         //Register classes
         Kryo kryo = server.getKryo();
-        kryo.register(Data.class);
+        kryo.register(class);
     }
 
     public void start() throws IOException {
         server.start();
         server.bind(54555, 54777);
         server.addListener(new Listener() {
+
+            @Override
+            public void connected(Connection connection) {
+                Listener.super.connected(connection);
+            }
+
             public void received(Connection connection, Object object) {
                 if (object instanceof Data) {
                     data = (Data) object;
-                    System.out.println(data.content);
+                    System.out.println("FROM CLIENT: " + data.content);
+                    sendTCP();
                 }
             }
         });
@@ -34,5 +41,9 @@ public class KryoServer {
 
     public void sendTCP() {
         server.sendToAllTCP(data);
+    }
+
+    public void stop() {
+        server.stop();
     }
 }

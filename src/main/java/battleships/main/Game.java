@@ -2,6 +2,7 @@ package battleships.main;
 
 import battleships.console.Input;
 import battleships.console.Output;
+import battleships.server.Network;
 import battleships.ships.*;
 
 import java.util.ArrayList;
@@ -21,10 +22,21 @@ public class Game {
     private Input input;
     private Output output;
     private ArrayList<Ship> ships;
+    private Network network;
 
     public Game() throws Exception {
         input = new Input();
 
+        network = new Network();
+        network.connect(input.serverOrHost());
+        // network.sendData(new Data());
+
+//        addShips();
+//        output = new Output(ships);
+//        output.update();
+    }
+
+    private void addShips() throws Exception {
         ships = new ArrayList<>();
         System.out.println(SHIP_TO_BE_PLACED + CARRIER_DESCRIPTION);
         ships.add(new Carrier(input.getPosition(), input.getDirection()).validatePlacementLocation(ships));
@@ -36,8 +48,6 @@ public class Game {
         ships.add(new Minesweeper(input.getPosition(), input.getDirection()).validatePlacementLocation(ships));
         System.out.println(SHIP_TO_BE_PLACED + OIL_PLATFORM_DESCRIPTION);
         ships.add(new OilPlatform(input.getPosition(), input.getDirection()).validatePlacementLocation(ships));
-
-        output = new Output(ships);
-        output.update();
     }
+
 }

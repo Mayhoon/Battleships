@@ -19,14 +19,15 @@ public class KryoClient {
         kryo.register(Data.class);
     }
 
-    public void start(String ip) throws IOException {
+    public void start() throws IOException {
         client.start();
-        client.connect(5000, ip, 54555, 54777);
+        client.connect(5000, "localhost", 54555, 54777);
         client.addListener(new Listener() {
             public void received(Connection connection, Object object) {
                 if (object instanceof Data) {
                     data = (Data) object;
-                    System.out.println(data.content);
+                    System.out.println("FROM SERVER: " + data.content);
+                    sendTCP();
                 }
             }
         });
