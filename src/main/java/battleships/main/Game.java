@@ -2,7 +2,8 @@ package battleships.main;
 
 import battleships.console.Input;
 import battleships.console.Output;
-import battleships.server.Network;
+import battleships.network.Data;
+import battleships.network.Network;
 import battleships.ships.*;
 
 import java.util.ArrayList;
@@ -23,12 +24,26 @@ public class Game {
     private Output output;
     private ArrayList<Ship> ships;
     private Network network;
+    private Data data;
 
     public Game() throws Exception {
         input = new Input();
-
+        data = new Data();
         network = new Network();
         network.connect(input.serverOrHost());
+        network.sendData(data);
+
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.println("Start Game?");
+//        String input = scanner.next();
+
+        while (true) {
+            System.out.println("Sending data...");
+            data.number += 1;
+            network.sendData(data);
+            System.out.println("Opponent data...");
+            System.out.println("--" + network.opponent().number);
+        }
         // network.sendData(new Data());
 
 //        addShips();

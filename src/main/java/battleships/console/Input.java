@@ -40,7 +40,7 @@ public class Input {
     }
 
     //Todo: exception handling
-    public NetworkType serverOrHost() throws IOException {
+    public NetworkType serverOrHost() {
         System.out.println("Are you hosting the game?");
         System.out.println("yes / no");
         String input = scanner.next();

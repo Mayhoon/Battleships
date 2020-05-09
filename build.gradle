@@ -34,7 +34,7 @@ jar {
 }
 
 shadowJar {
-    baseName = 'shadow'
+    baseName = 'Game'
     classifier = ''
     archiveVersion = ''
 }
