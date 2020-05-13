@@ -7,7 +7,7 @@ import com.esotericsoftware.kryonet.Listener;
 
 import java.io.IOException;
 
-public class KryoClient {
+public class KryoClient extends NetworkEntity {
     private Client client;
     private Data opponent;
 

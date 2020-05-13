@@ -7,7 +7,7 @@ import com.esotericsoftware.kryonet.Server;
 
 import java.io.IOException;
 
-public class KryoServer {
+public class KryoServer extends NetworkEntity {
     private Server server;
     private Data opponent;
 
