@@ -9,6 +9,7 @@ public class OilPlatform extends Ship {
         description = "Oil Platform";
         length = 2;
         width = 2;
+        score = score * 2;
         isHorizontal = horizontal;
         this.setCoordinates(isHorizontal, field);
     }

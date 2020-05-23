@@ -41,11 +41,6 @@ public class Ship {
         length = l;
     }
 
-    // Width
-    public int getWidth() {
-        return width;
-    }
-
     // Alignment
     public void setHorizontal(boolean horizontal) {
         isHorizontal = horizontal;
